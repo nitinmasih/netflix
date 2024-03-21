@@ -47,17 +47,27 @@ nav button{
 
 
 }
-.language-btn{
+.right-nav select{
  display: inline-flex;
  align-items: center;
  background: transparent;
  border: 1px solid #fff;
- padding: 7px 10px;
+ padding: 7px 15px;
+ 
+ color: white;
+ cursor: pointer;
 
 }
-.language-btn img{
-    width: 10px;
-    margin-left: 10px;
+select option{
+    color: #000;
+}
+
+select option:hover{
+cursor: pointer;
+}
+.right-nav{
+    display: flex;
+    gap: 15px;
 }
 .header-content{
     position: absolute;
@@ -181,7 +191,7 @@ position: absolute;
 font-size: 34px;
 right: 20px;
 }
-input[type="radio"]{
+input[type="checkbox"]{
     display: none;
 }
 .accordion .content{
@@ -193,11 +203,14 @@ input[type="radio"]{
     transition: max-height 0.5s; padding: 0.5s;
 
 }
-.accordion input[type="radio"]:checked + label + .content{
+.accordion input[type="checkbox"]:checked + label + .content{
     max-height: 600px;
     padding: 30px 20px;
 }
-.accordion input[type="radio"]:checked + label::after{
+
+
+
+.accordion input[type="checkbox"]:checked + label::after{
     transform: rotate(135deg);
 }
 small{
